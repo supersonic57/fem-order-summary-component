@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container .container-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.container .container-background img {
+  width: 100vw;
+}
+
+.component {
+  background-color: white;
+  width: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  box-shadow: 0 10px 50px hsl(224, 23%, 55%);
+}
+@media screen and (max-width: 500px) {
+  .component {
+    width: 90%;
+  }
+}
+.component .component-bottom {
+  padding: 45px;
+  display: grid;
+  gap: 20px;
+}
+@media screen and (max-width: 500px) {
+  .component .component-bottom {
+    padding: 25px;
+  }
+}
+.component h1 {
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: hsl(223, 47%, 23%);
+}
+@media screen and (max-width: 500px) {
+  .component h1 {
+    font-size: 1.4rem;
+  }
+}
+.component p.description {
+  line-height: 1.5;
+}
+@media screen and (max-width: 500px) {
+  .component p.description {
+    padding: 0 15px;
+    font-size: 0.95rem;
+  }
+}
+.component .plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+  .component .plan {
+    font-size: 0.9rem;
+  }
+}
+.component .plan .plan-left-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.component .plan .plan-left-side .plan-left-side-text {
+  line-height: 1.5;
+}
+.component .plan .plan-left-side .plan-left-side-text .plan-type {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.component .plan a.change {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+.component .plan a.change:hover {
+  text-decoration: none;
+  color: #8b82ed;
+}
+.component button.proceed {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 900;
+  padding: 15px 0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 30px 10px hsl(225, 100%, 94%);
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+  .component button.proceed {
+    font-size: 0.9rem;
+  }
+}
+.component button.proceed:hover {
+  cursor: pointer;
+  background-color: #766cea;
+}
+.component a.cancel {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+}
+@media screen and (max-width: 500px) {
+  .component a.cancel {
+    font-size: 0.9rem;
+  }
+}
+.component a.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/*# sourceMappingURL=style.css.map */
